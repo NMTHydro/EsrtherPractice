@@ -1,19 +1,12 @@
 
-with open(color.csv, 'r') as data:
-
-a = data[:,0]
-b = data[;,1]
-approach_traffic_light(a,b)
 
 
 def approach_traffic_light(a, b):
     if a == 'green':
       continue_moving()
-      else:
-       if a == 'red':
+      elif a == 'red':
           stop_moving()
-       else:
-           if a == 'yellow' and b == 'green':
+      elif a == 'yellow' and b == 'green':
               still_go()
            else:
                nope_dont()
@@ -31,3 +24,12 @@ def still_go():
 def nope_dont():
     print "Ready to stop."
 
+
+with open(color.csv, 'r') as data:
+
+a = data[:,0]
+b = data[;,1]
+approach_traffic_light(a,b)
+
+if _name_ = '_main_':
+    approach_traffic_light()
